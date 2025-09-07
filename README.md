@@ -23,7 +23,7 @@ Swagger documentation is available after application startup.
 
 Clone the repository:
 ```bash
-git clone https://github.com/irolltwenties/testquest.git
+git clone https://github.com/irolltwenties/test_taskmgr.git
 ```
 
 # Setup
