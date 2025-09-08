@@ -48,7 +48,7 @@ docker compose up -d
 ```
 View application logs:
 ```bash
-docker compose logs -f <container name or api>
+docker compose logs -f <container name or id>
 ```
 
 ## Alternative run (no container)
@@ -119,7 +119,7 @@ Ensure port 8000 is exposed from the Docker container to access the documentatio
 
 Run tests with coverage:
 ```bash
-docker compose exec api pytest --cov
+docker compose exec <container_id> pytest --cov
 ```
 # Testing with Postman
 
@@ -138,6 +138,9 @@ Ensure that:
 
 Try restarting migrations:
 ```bash
-docker compose exec api alembic downgrade base
-docker compose exec api alembic upgrade head
+docker compose exec <container_id> alembic downgrade base
+docker compose exec <container_id> alembic upgrade head
 ```
+
+# other languages readme
+readme is also available on russian language [README-ru.md](README-ru.md)
